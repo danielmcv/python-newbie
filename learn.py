@@ -112,7 +112,7 @@ print type (verdadero) #---------> (bool)
 #----------------------------------------------------------------------------#
 """
 Hay mas tipos de datos y variables como listas, diccionarios, tuplas
-y otros tipos mas que los veras mas adelante.
+y otros tipos mas que los veras mas adelante. Ver linea 197.
 """
 #----------------------------------------------------------------------------#
 
@@ -193,3 +193,46 @@ numbre_de_variable="expresión"
 
 #para asignar una expresion a una variable simplemente usa el signo de igual =
 #----------------------------------------------------------------------------#
+
+# TIPO DE DATO: LIST, TIPO DE VARIABLE: Lista (list)
+# Una lista es una secuencia que contiene nuemros de objetos. Los elementos
+# estan en orden y tienen un index.
+# Las lista son uno de los tipos datos mas flexibles y mas usados en python
+# Una lista es un contenedor que contiene numeros y otros objetos.
+# Para crear una lista en python lo que tienes que hacer es poner los numeros
+# o objetos dentro de corechetes [] y separalos con comas , .
+
+# EJEMPLO:
+mi_lista=["hola", 5.6, 137, True]
+print type(mi_lista)
+
+#podemos usar corchetes [] para accesar a los elementos dentro de la lista
+# cada elemento tiene un index empezando desde cero[0]
+
+#index POSITIVO
+#------->    0          1         2          3           4
+verduras=["Tomate", "Cebolla", "Chile", "Cilantro", "Lechuaga"]
+#------->   -5         -4        -3         -2          -1        
+#index NEGATIVO
+
+#para accesar
+print verduras[2] #El resultado es chile. Si usamos verduras[5 o mas ] 
+# nos dara ERROR.
+print verduras[-4] #EL resultado es cebolla. si usamos [-6 o menos]
+# nos dara un error.
+
+age = input("How old are you? ")
+days= int(age)*365
+print "You are", days, "days old"
+
+x = input("type a number ")
+y = (int(x)**2)-(12*int(x))+11
+print (y)
+
+week_days=["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
+result=input("Type a numer from 1 to 7: ")
+print week_days[int(result)-1]
+
+sample_list = [2, 10, 3, 5]
+average = (sample_list[0]+sample_list[1]+sample_list[2]+sample_list[3])/4
+print (average)
