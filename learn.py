@@ -86,7 +86,7 @@ print type (a) #---------> (str)
 
 # TIPO DE DATO: PUNTO FLOTANTE, TIPO DE VARIABLE: float (float)
 # cuando usamos un punto en los numeros, en python se considera como una dato
-# o variable tipo (float). EJEMPLO.
+# o variable tipo (float). EJEMPLO:
 
 numero1=20.40
 numero2=2.63
@@ -98,6 +98,23 @@ print resultado # podemos usar la declaracion PRINT para demostrar diferentes va
 print type (resultado) #---------> (float)
 #----------------------------------------------------------------------------#
 
+# TIPO DE DATO: BOOLEANO, TIPO DE VARIABLE: Booleano (bool)
+# cuando usamos (True o False), en python se considera como una dato
+# o variable tipo (bool). EJEMPLO:
+
+verdadero=True #NOTA: tiene que tener mayuscula T si no, no funciona.
+falso=False    #NOTA: tiene que tener mayuscula F si no, no funciona.
+
+print verdadero # podemos usar la declaracion PRINT para demostrar diferentes valores
+		# en este caso el valor de (verdadero) True. 
+#Si queremos conocer el tipo de variable que es solamente tenemos que hacer:
+print type (verdadero) #---------> (bool)
+#----------------------------------------------------------------------------#
+"""
+Hay mas tipos de datos y variables como listas, diccionarios, tuplas
+y otros tipos mas que los veras mas adelante.
+"""
+#----------------------------------------------------------------------------#
 
 """
 Esta a es una recomendacion para una buen programacion
@@ -139,7 +156,40 @@ print "El area es: ", area_de_rectagulo
 print "El perimetro es: ", perimetro_de_rectangulo
 # Y esto es mucho mejor para futuros debugeos y correcciones.
 
-
-
 tu_nombre = raw_input("¿Como te llamas? ") 
 print "Hola",tu_nombre
+#----------------------------------------------------------------------------#
+"""
+=========== DECLARACIONES, ASIGNACIONES, EXPRESIONES ============
+"""
+
+#¿Que es una EXPRESION?
+#- Una expresión es cualquier sección de código que evalúa a un valor.
+# EJEMPLOS:
+
+9       # Esto es una expresión porque se evalúa a un valor (9)
+3+4     # 3+4 es una expresion, 3 y 4 solos se concideran subexpresiones
+3+(4*5) # ¿Cuantas expresiones hay aqui?
+"hola"  # Esta expresión se evalúa como "hola"
+True    # Esta expresión se evalúa como True
+#_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+#¿Que es una DECLARACION?
+# es una instrucción que python puede ejecutar
+# EJEMPLOS:
+
+b=3+5     # El 3+5 es una expersion se evalua a un valor (8)
+		  # pero b=3+5 es una declaracion de expersion
+print (b) # print es una declaracion
+if b>3 :  # if es una declaracion por que python los puede evaluar
+	pass
+#_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+#Que es una ASIGNACION?
+#Es una declaracion que asocia nombres con valores en tu programa
+#La forma mas simple de una declaracion de asignacion es:
+
+numbre_de_variable="expresión" 
+
+#para asignar una expresion a una variable simplemente usa el signo de igual =
+#----------------------------------------------------------------------------#
