@@ -50,14 +50,14 @@ INVALIDOS >>>> 2x, x.2, A-2, my x, for. <<<<<<
 # Si quieres descomentar una linea solamente remueve el (#).
 #------------------------------------------------------------------------------#
 
-#TIPO DE DATO: NUMERO
+#TIPO DE DATO: NUMERO, TIPO DE VARIABLE: Entero (int)
 # En python puedes hacer simples calculos como:
 3+4
 6*5
 9-4
 10/2
 
-# Tambien podemos hacer declaraciones compuestas con los parentesis
+#Tambien podemos hacer declaraciones compuestas con los parentesis
 (2+4)*(3/2)
 
 # Si queremos guardar un valor utilizamos una variable, en este caso
@@ -66,8 +66,11 @@ y=29-13 #python guarda el valor de 16 en la variable y
 
 print x*y # podemos usar la declaracion PRINT para demostrar diferentes valores
 		  # en este caso el valor de (x) por (y) es 176
+#Si queremos conocer el tipo de variable que es solamente tenemos que hacer:
+print type(x) #-------> (int)
 #-----------------------------------------------------------------------------#
-#TIPO DE DATO: CADENA DE CARACTERES
+
+#TIPO DE DATO: CADENA DE CARACTERES, TIPO DE VARIABLE: cadena(str)
 
 # En python podemos usar una cadena de caracteres lo unico que tenemos que
 # hacer  es escribir todo adenteo de "" comillas dobles o '' comillas simples
@@ -77,7 +80,25 @@ print x*y # podemos usar la declaracion PRINT para demostrar diferentes valores
 a="gato"
 print a # podemos usar la declaracion PRINT para demostrar diferentes valores
 		# en este caso el valor de (a) es gato.
+#Si queremos conocer el tipo de variable que es solamente tenemos que hacer:
+print type (a) #---------> (str)
 #----------------------------------------------------------------------------#
+
+# TIPO DE DATO: PUNTO FLOTANTE, TIPO DE VARIABLE: float (float)
+# cuando usamos un punto en los numeros, en python se considera como una dato
+# o variable tipo (float). EJEMPLO.
+
+numero1=20.40
+numero2=2.63
+
+resultado=numero1+numero2
+print resultado # podemos usar la declaracion PRINT para demostrar diferentes valores
+		# en este caso el valor de (resultado) es 23.3 
+#Si queremos conocer el tipo de variable que es solamente tenemos que hacer:
+print type (resultado) #---------> (float)
+#----------------------------------------------------------------------------#
+
+
 """
 Esta a es una recomendacion para una buen programacion
 
@@ -108,14 +129,14 @@ print perimetro
 # quieres hacer.
 
 # Ejemplo 3
-# Si calificamos algunas de las palabras podemos ser mas discriptivos
+# Si calificamos algunas de las palabras podemos ser mas descriptivos
 # Este programa calcula el area y el perimeto de un rectangulo.
 altura_de_rectangulo=20
-ancho_de_rectangulo=40
-area_de_rectagulo=altura_de_rectangulo*ancho_de_rectangulo
+ancho_de_rectangulo=40 
+area_de_rectagulo=(altura_de_rectangulo)*(ancho_de_rectangulo)
 perimetro_de_rectangulo=(altura_de_rectangulo+ancho_de_rectangulo)*2
-print area_de_rectagulo
-print perimetro_de_rectangulo
+print "El area es: ", area_de_rectagulo
+print "El perimetro es: ", perimetro_de_rectangulo
 # Y esto es mucho mejor para futuros debugeos y correcciones.
 
 
