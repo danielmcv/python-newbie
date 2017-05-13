@@ -221,6 +221,9 @@ print verduras[2] #El resultado es chile. Si usamos verduras[5 o mas ]
 print verduras[-4] #EL resultado es cebolla. si usamos [-6 o menos]
 # nos dara un error.
 
+
+"""
+=========== EJERCICIOS DE EXAMEN ============
 age = input("How old are you? ")
 days= int(age)*365
 print "You are", days, "days old"
@@ -235,4 +238,50 @@ print week_days[int(result)-1]
 
 sample_list = [2, 10, 3, 5]
 average = (sample_list[0]+sample_list[1]+sample_list[2]+sample_list[3])/4
-print (average)
+print average
+"""
+#----------------------------------------------------------------------------#
+"""
+=========== OPERADORES, ARITMETICA, PRECEDENCIA ============
+"""
+
+
+# OPPERADORES
+# ¿Que son los Operadores?
+# Son simbolos que le dicen al interpretador de python que haga una operacion
+# logica o matematica.
+3*2 #<---- El asterisco es un operador por que multiplica el 3 por el 2
+7-3 #<---- Este es un operador binario por que actua a dos operandos
+-7  #<---- Este esun operador unario por que actua en un operando
+
+# TIPOS DE OPERADORES
+# Matematicos: +, -, *, /, **, %, //, -
+# Relacionales: <, <=, >, >=, !=, ==
+# Logicos:  or, and, not
+# Bitwise:  |, &, ^,~, <<,>>
+# Membresia: in, not in
+# Identidad: is, is not
+"""
+Visita esta pagina para mas info sobre los Operadores
+https://www.tutorialspoint.com/python/python_basic_operators.htm
+"""
+#_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+# OPERADORE  ARITMETICO
+# ¿Que es un Operador Aritmetico?
+# Basicamente estos so los operadores aritmeticos, son los operadores basicos
+# como sumas, restas, multiplicaciones, etc.
+# -------> +, -, *, /, **, %, // <--------
+# mas info aqui https://www.tutorialspoint.com/python/arithmetic_operators_example.htm
+
+#_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+# PRECEDENCIA DE OPERACIONES
+# ¿Que es la precedencia?
+# es una regla de python que identifica que operacion se debe de realizar primero,
+# EJEMPLO:
+
+2+3-54*32 # en este caso el operador (*) se realizara primero por que 
+# tiene mayor precedencia que (+)y(-)
+# para ver una tabla de la precedencia de operaciones visita:
+# https://www.tutorialspoint.com/python/operators_precedence_example.htm
