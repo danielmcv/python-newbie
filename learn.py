@@ -222,13 +222,13 @@ print verduras[-4] #EL resultado es cebolla. si usamos [-6 o menos]
 # nos dara un error.
 
 
-"""
-=========== EJERCICIOS DE EXAMEN ============
+
+# =========== EJERCICIOS DE EXAMEN ============
 age = input("How old are you? ")
 days= int(age)*365
 print "You are", days, "days old"
 
-x = input("type a number ")
+x = input("Type a number: ")
 y = (int(x)**2)-(12*int(x))+11
 print (y)
 
@@ -239,7 +239,7 @@ print week_days[int(result)-1]
 sample_list = [2, 10, 3, 5]
 average = (sample_list[0]+sample_list[1]+sample_list[2]+sample_list[3])/4
 print average
-"""
+
 #----------------------------------------------------------------------------#
 """
 =========== OPERADORES, ARITMETICA, PRECEDENCIA ============
@@ -267,7 +267,7 @@ https://www.tutorialspoint.com/python/python_basic_operators.htm
 """
 #_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-# OPERADORE  ARITMETICO
+# OPERADORES  ARITMETICO
 # ¿Que es un Operador Aritmetico?
 # Basicamente estos so los operadores aritmeticos, son los operadores basicos
 # como sumas, restas, multiplicaciones, etc.
@@ -281,7 +281,47 @@ https://www.tutorialspoint.com/python/python_basic_operators.htm
 # es una regla de python que identifica que operacion se debe de realizar primero,
 # EJEMPLO:
 
+
 2+3-54*32 # en este caso el operador (*) se realizara primero por que 
 # tiene mayor precedencia que (+)y(-)
 # para ver una tabla de la precedencia de operaciones visita:
 # https://www.tutorialspoint.com/python/operators_precedence_example.htm
+#----------------------------------------------------------------------------#
+
+# OPERADORES RELACIONALES
+
+# Los operadores relacionales tambien conocidos como (operadores de comparacion)
+# son los que comparan a dos operandos con otro operador,
+# por ejemplo le podemos decir que si un operando es mayor o menor que otro 
+# operando, etc.
+
+# Relacionales: <, <=, >, >=, !=, == 
+#_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+#OPERADORES LOGICOS
+#logicos: and, or, not
+#Ejemplo:
+
+print 2==2 and 4>1 # el resultado seria (True) por que las dos operaciones
+# son verdaderas. Si solamente una operacion fuera verdadera nor daria un 
+# resultado de (False).
+
+print 2==2 or 4>=7 # el resultado seria (True) por que una de las operaciones
+# es verdadera. aqui, con que una operacion sea cierta el resultado sera (true)
+
+print not 5>3 # el (not) es un operador unario. En este caso como el resltado
+# es (True), pero si ponemos un (not), el resultado sera inverso.
+#_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+#OPERADORES DE MEMBRESIA
+
+# Son los operadores que determinan si hay un valor en una secuencia.
+# hay solamente dos operadores de membresia.
+
+#(in y not in) 
+# (in) revisa para ver si hay un valor en una secuencia
+# (not in) revisa para ver si no hay un valor en una secuencia.
+# Ejemplo:
+print 5 in [2,5,7,1] # El resultado es (True) por que 5 esta en la secuencia
+print 5 not in [2,5,7,1] # el resultado es (False) por que 5 esta en la secuencia
+#----------------------------------------------------------------------------#
