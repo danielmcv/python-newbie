@@ -325,3 +325,35 @@ print not 5>3 # el (not) es un operador unario. En este caso como el resltado
 print 5 in [2,5,7,1] # El resultado es (True) por que 5 esta en la secuencia
 print 5 not in [2,5,7,1] # el resultado es (False) por que 5 esta en la secuencia
 #----------------------------------------------------------------------------#
+
+"""
+==================== CONDICIONALE ====================
+
+En la programación de computadoras, declaraciones condicionales
+Se utilizan para realizar diferentes cálculos o acciones dependiendo
+Si la condición es Verdadero o Falso.
+Recurda que (True)verdadero y (Falce)falso en Python
+Se escriben con letras mayúsculas.
+"""
+#En la vida real todos tomamos decisiones basadas en condiciones,
+#Por ejemplo podrias decir
+# Si no esta lloviendo ire al parque.
+
+# Declaracion (if else)
+# if expresión:
+#	...
+#	...
+# else :
+#	declaracion(s)
+#	...
+# print ("Afuera del if")
+
+#ESTE PROGRAMA CONVIERTE LA TEMPERATURA DE CELCIUS A FAHRENHEIT
+respuesta_usuario = input ("Por favor ingresa la temperatura en celcius: ")
+celcius = float(respuesta_usuario)
+fahrenheit = ((celcius*9)/5)+32
+if fahrenheit>90:
+	print ("Esta haciendo calor, compra un elado.")
+else:
+	print ("Que se arme la peda.")
+print (fahrenheit)
