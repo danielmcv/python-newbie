@@ -339,9 +339,9 @@ Se escriben con letras mayúsculas.
 #Por ejemplo podrias decir
 # Si no esta lloviendo ire al parque.
 
-# Declaracion (if else)
+# -----------Declaracion (if else)--------------#
 # if expresión:
-#	...
+#	declaracion(s)
 #	...
 # else :
 #	declaracion(s)
@@ -357,3 +357,56 @@ if fahrenheit>90:
 else:
 	print ("Que se arme la peda.")
 print (fahrenheit)
+
+
+#ESTE PROGRAMA AL USUARIO "QUE SI QUE ANIMAL ES SU FAVORITO" SI ESE
+#ANIMAL EN UN PERRO ("dog")  QUE ARROJE ("yes") DE LO CONTRARIO QUE
+#ARROJE ("no").
+animal = raw_input("what animal is your favorite pet: ")
+if "dog" in animal:
+	print "yes"
+else:
+	print "no"
+
+#ESTE PROGRAMA LE DICE AL USUARIO QUE ESCRIBA CUALQUIER NUMERO
+#Y SI ESE NUMERO SE PUEDE DIVIDIR ENTRE 3 SIN DEJAR UN RESTANTE
+#QUE IMPRIMA ("yes") DE LO CONTRARIO QUE IMPRIMA ("no")
+number = input("type any number: ")
+number = int(number%3)
+if int(number) == 0:
+	print "yes"
+else:
+	print "no"
+print number
+
+# -----------Declaracion (if elif else)--------------#
+# 	EN EL CASO DE QUE NECESITES REVISAR VARIAS CONDICIONES DEBERIAS USAR
+#	ESTA DECLARACION. NOTA: (elif) ES CORTO DE (else if)
+
+#EJEMPLO:
+# if expresión:
+#	declaracion(s)
+#	...
+# elif expresión:
+#	declaracion(s)
+#	...
+# elif expresión:
+#	declaracion(s)
+#	...
+# else :
+#	declaracion(s)
+#	...
+# print ("Afuera del if")
+
+respuesta_usuario = input ("Por favor ingresa la temperatura en celcius: ")
+celcius = float(respuesta_usuario)
+fahrenheit = ((celcius*9)/5)+32
+print "La temperatura en fahrenheit es",fahrenheit
+if fahrenheit<32:
+	print ("Esta congelasdo")
+elif fahrenheit<50:
+	print("Esta haciendo frio")
+elif fahrenheit<90:
+	print("Esta agusto")
+else:
+	print ("Pasame una bien helada por que esta haciendo calor")
