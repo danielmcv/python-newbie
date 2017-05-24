@@ -410,3 +410,35 @@ elif fahrenheit<90:
 	print("Esta agusto")
 else:
 	print ("Pasame una bien helada por que esta haciendo calor")
+
+
+
+word = raw_input("Escribe lo que tu quieras: ")
+if "dog" in word:
+	print("Dog")
+elif "cat" in word:
+	print("Cat")
+elif "cat" and "dog" in word:
+	print("Dog")
+else:
+	print("None")
+
+
+respuesta = input("Escribe un entero: ")
+if 2 == int(respuesta):
+	print("two")
+elif 3 == int(respuesta):
+	print("three")
+elif 5 == int(respuesta):
+	print("five")
+else:
+	print("other")
+
+
+age = input("¿How old are you? ")
+if int(age)<=0:
+	print ("UNBORN")
+elif int(age)>0 and int(age)<=150:
+	print ("ALIVE")
+else:
+	print ("VAMPIRE")
