@@ -411,7 +411,7 @@ elif fahrenheit<90:
 else:
 	print ("Pasame una bien helada por que esta haciendo calor")
 
-
+#-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
 
 word = raw_input("Escribe lo que tu quieras: ")
 if "dog" in word:
@@ -423,7 +423,7 @@ elif "cat" and "dog" in word:
 else:
 	print("None")
 
-
+#-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
 respuesta = input("Escribe un entero: ")
 if 2 == int(respuesta):
 	print("two")
@@ -434,7 +434,7 @@ elif 5 == int(respuesta):
 else:
 	print("other")
 
-
+#-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
 age = input("¿How old are you? ")
 if int(age)<=0:
 	print ("UNBORN")
@@ -442,3 +442,21 @@ elif int(age)>0 and int(age)<=150:
 	print ("ALIVE")
 else:
 	print ("VAMPIRE")
+
+#-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
+n = input("write a number: ")
+if int(n%2) == 0 and int(n%3) == 0:
+	print ("BOTH")
+elif int(n%2) == 0 or int(n%3) == 0:
+	print ("ONE")
+else:
+	print ("NEITHER")
+
+#-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-#
+user_response = input("How many hours did you work this week: ")
+hours = int(user_response)
+if hours<0 or hours>168:
+	print ("INVALID")
+elif hours<=40:
+	hours = hours*8
+	print "YOU MADE", hours, "DOLLARS THIS WEEK"
